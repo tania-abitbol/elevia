@@ -22,7 +22,7 @@ const StickyBanner: React.FC = () => {
     showBanner && (
       <div className="fixed bottom-0 left-0 w-full bg-[#002a5c] text-white py-4 px-6 flex flex-col md:flex-row items-center justify-between z-50 shadow-lg">
         <p className="text-md text-center md:text-left mb-4 md:mb-0 md:mr-4">
-          Voyagez l'esprit libre, on s'occupe de tout.
+          Voyagez l&apos;esprit libre, on s&apos;occupe de tout.
         </p>
         <a
           href="https://calendly.com/taniaelevia/15min"
