@@ -67,6 +67,8 @@ const FeaturedExperiences: React.FC = () => {
               <Image
                 src={experience.image}
                 alt={experience.alt}
+                width={256}
+                height={256}
                 className="w-full h-64 object-cover"
               />
               <div className="absolute inset-0 bg-black bg-opacity-20"></div>
