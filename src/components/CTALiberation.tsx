@@ -7,7 +7,7 @@ const CTALiberation: React.FC = () => {
           s&apos;occupe de tout.
         </p>
         <a
-          href="https://calendly.com/taniabitbol/15min"
+          href="https://calendly.com/taniaelevia/15min"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-4 md:mt-0 px-6 py-2 bg-white text-[var(--accent-color)] font-semibold rounded-md hover:bg-gray-200 transition"
