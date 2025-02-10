@@ -1,5 +1,6 @@
 import { Link } from "react-scroll";
 import { useState } from "react";
+import { FaPlane } from "react-icons/fa";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,7 +9,13 @@ const Navbar: React.FC = () => {
     <nav className="absolute top-0 left-0 w-full bg-transparent text-white z-30">
       <div className="p-6 flex justify-between items-center">
         {/* Logo */}
-        <h1 className="text-2xl font-bold">Elevia</h1>
+        <div className="flex items-center space-x-2">
+          <FaPlane className="text-2xl" />
+          <h1 className="text-2xl font-extralight ">
+            Elevia {""}
+            <span className=" text-[var(--yellow)]">Prestige</span>
+          </h1>
+        </div>
 
         <div className="hidden md:flex space-x-6">
           <Link
