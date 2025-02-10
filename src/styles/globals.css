@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --primary-color: #004d40; /* Vert foncé ou autre couleur premium */
+  --secondary-color: #f4f4f4; /* Beige ou blanc cassé */
+  --accent-color: #002a5c; /* Or */
+  --yellow: #ffd700; /* Jaune */
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.shadow-lg {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}
