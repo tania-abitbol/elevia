@@ -12,25 +12,23 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <link rel="manifest" href="/manifest.json" />
         <title>Accueil | Elevia</title>
-      </Head>
 
-      {/* Chargement optimisé du script Google Tag Manager */}
-      <Script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=AW-16866771162"
-        strategy="afterInteractive"
-      />
-      
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16866771162"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'AW-16866771162');
         `}
-      </Script>
+        </Script>
+      </Head>
 
-      {/* Google Analytics avec suivi des pages */}
       <GoogleAnalytics trackPageViews gaMeasurementId="G-9Z08YBERKK" />
 
       <Navbar />
