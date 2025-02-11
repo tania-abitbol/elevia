@@ -1,16 +1,15 @@
 const CTALiberation: React.FC = () => {
   const handleCalendlyClick = () => {
-    // Logique pour envoyer l'événement à Google Ads
-    window.gtag("event", "conversion", {
-      send_to: "AW-16866771162/xylZCOvUopwaENqB2uo-", // ID de la conversion
+    gtag("event", "conversion", {
+      send_to: "AW-16866771162/xylZCOvUopwaENqB2uo-",
       value: 1.0,
       currency: "EUR",
+      event_callback: () => {
+        window.location.href = "https://calendly.com/taniaelevia/15min";
+      },
     });
 
-    // Délai pour s'assurer que l'événement est bien capté avant la redirection
-    setTimeout(() => {
-      window.location.href = "https://calendly.com/taniaelevia/15min"; // Redirige vers Calendly
-    }, 300); // Délai de 300ms
+    return false; 
   };
 
   return (
@@ -21,10 +20,9 @@ const CTALiberation: React.FC = () => {
           s&apos;occupe de tout.
         </p>
 
-        {/* Ici nous créons un bouton avec une div */}
         <div
           className="mt-4 md:mt-0 px-6 py-2 bg-white text-[var(--accent-color)] font-semibold rounded-md hover:bg-gray-200 cursor-pointer transition"
-          onClick={handleCalendlyClick} // Événement de conversion sur clic
+          onClick={handleCalendlyClick}
         >
           Réserver mon appel
         </div>
@@ -34,3 +32,4 @@ const CTALiberation: React.FC = () => {
 };
 
 export default CTALiberation;
+
