@@ -1,18 +1,21 @@
 const CTALiberation: React.FC = () => {
   const handleCalendlyClick = (e: React.MouseEvent) => {
-    e.preventDefault(); // Empêche la redirection immédiate
+    e.preventDefault(); // Empêcher la redirection immédiate pour l'envoi de l'événement
+
+    // Log l'événement pour le débogage
+    console.log("Google Ads conversion triggered!");
 
     // Envoi de l'événement à Google Analytics
     window.gtag("event", "conversion", {
-      send_to: "AW-16866771162/xylZCOvUopwaENqB2uo-",
+      send_to: "AW-16866771162/xylZCOvUopwaENqB2uo-", // ID de la conversion
       value: 1.0,
       currency: "EUR",
     });
 
-    // Attente de 500ms avant de rediriger
+    // Délai pour assurer que l'événement est capté avant la redirection
     setTimeout(() => {
-      window.location.href = "https://calendly.com/taniaelevia/15min"; // Redirection manuelle
-    }, 500); // Attendre 0.5 seconde pour permettre au gtag de se propager
+      window.location.href = "https://calendly.com/taniaelevia/15min"; // Redirige vers Calendly
+    }, 300); // Petit délai de 300ms
   };
 
   return (
