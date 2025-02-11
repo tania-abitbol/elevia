@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import Image from "next/image"; // Importer le composant Image de Next.js
 
 const Partners: React.FC = () => {
   const partners = [
@@ -51,10 +52,12 @@ const Partners: React.FC = () => {
             key={index}
             className="flex-shrink-0 w-56 mx-4 flex justify-center items-center p-6 bg-white rounded-lg shadow-md border border-gray-200"
           >
-            <img
+            <Image
               src={partner.logo}
               alt={`Logo de ${partner.name}`}
-              className="h-20 object-contain"
+              className="object-contain"
+              width={200}  // Choisis une largeur adaptée à l'affichage
+              height={80}  // Choisis une hauteur adaptée à l'affichage
             />
           </div>
         ))}
