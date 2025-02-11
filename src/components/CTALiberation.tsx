@@ -2,17 +2,17 @@ const CTALiberation: React.FC = () => {
   const handleCalendlyClick = (e: React.MouseEvent) => {
     e.preventDefault(); // Empêche la redirection immédiate
 
-    // Envoie l'événement à Google Analytics
+    // Envoi de l'événement à Google Analytics
     window.gtag("event", "conversion", {
       send_to: "AW-16866771162/xylZCOvUopwaENqB2uo-",
       value: 1.0,
       currency: "EUR",
     });
 
-    // Redirige vers le lien Calendly après un délai
+    // Attente de 500ms avant de rediriger
     setTimeout(() => {
       window.location.href = "https://calendly.com/taniaelevia/15min"; // Redirection manuelle
-    }, 1000); // Attends 1 seconde pour que l'événement soit traité
+    }, 500); // Attendre 0.5 seconde pour permettre au gtag de se propager
   };
 
   return (
