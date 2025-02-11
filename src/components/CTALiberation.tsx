@@ -7,7 +7,7 @@ const handleCalendlyClick = () => {
       value: 1.0,
       currency: "EUR",
       event_callback: () => {
-        window.location.href = "https://your-calendly-link.com"; // Redirection
+        window.location.href = "https://calendly.com/taniaelevia/15min"; 
       },
     });
   }
