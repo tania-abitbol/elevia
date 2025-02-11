@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 const CTALiberation: React.FC = () => {
   const handleCalendlyClick = () => {
     // Logique pour envoyer l'événement à Google Ads
