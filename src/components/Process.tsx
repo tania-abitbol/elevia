@@ -1,4 +1,6 @@
-const Process: React.FC = () => {
+import { navigateToCalendly } from "@/utils/navigateToCalendly";
+
+const Process = () => {
   return (
     <div id="process" className="min-h-screen text-gray-900">
       <section className="py-16 px-6 text-center">
@@ -90,13 +92,12 @@ const Process: React.FC = () => {
           Réservez dès maintenant votre appel et laissez-nous créer votre voyage
           sur-mesure.
         </p>
-        <a
-          href="https://calendly.com/taniaelevia/15min"
-          target="_blank"
+        <button
+          onClick={navigateToCalendly}
           className="mt-6 px-8 py-4 bg-white text-[var(--accent-color)] font-semibold rounded-lg hover:bg-gray-200 transition inline-block"
         >
           Planifier un appel maintenant
-        </a>
+        </button>
       </section>
     </div>
   );

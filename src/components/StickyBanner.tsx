@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
-const StickyBanner: React.FC = () => {
+
+import { navigateToCalendly } from "@/utils/navigateToCalendly";
+
+const StickyBanner = () => {
   const [showBanner, setShowBanner] = useState(false);
 
   useEffect(() => {
@@ -24,13 +27,12 @@ const StickyBanner: React.FC = () => {
         <p className="text-md text-center md:text-left mb-4 md:mb-0 md:mr-4">
           Voyagez l&apos;esprit libre, on s&apos;occupe de tout.
         </p>
-        <a
-          href="https://calendly.com/taniaelevia/15min"
-          target="_blank"
+        <button
+          onClick={navigateToCalendly}
           className="bg-white text-[#002a5c] px-6 py-2 font-semibold rounded-lg shadow hover:bg-gray-200 transition-all"
         >
           Planifier un appel
-        </a>
+        </button>
       </div>
     )
   );

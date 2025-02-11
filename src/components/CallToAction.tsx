@@ -1,6 +1,6 @@
-import Link from "next/link";
+import { navigateToCalendly } from "@/utils/navigateToCalendly";
 
-const CallToAction: React.FC = () => {
+const CallToAction = () => {
   return (
     <section
       id="contact"
@@ -16,13 +16,12 @@ const CallToAction: React.FC = () => {
           Réservez un appel dès maintenant et laissez-nous organiser votre
           prochain voyage de rêve.
         </p>
-        <Link
-          href="https://calendly.com/taniaelevia/15min"
-          target="_blank"
+        <button
+          onClick={navigateToCalendly}
           className="mt-6 inline-block px-8 py-4 bg-white text-[var(--accent-color)] font-semibold rounded-lg transition duration-300 transform hover:bg-gray-200 hover:scale-105"
         >
           Réserver un appel
-        </Link>
+        </button>
       </div>
     </section>
   );

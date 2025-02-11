@@ -1,4 +1,6 @@
-const HeroSection: React.FC = () => {
+import { navigateToCalendly } from "@/utils/navigateToCalendly";
+
+const HeroSection = () => {
   return (
     <header
       id="hero"
@@ -13,13 +15,12 @@ const HeroSection: React.FC = () => {
           Des voyages sur-mesure, une organisation impeccable, des expériences
           inoubliables.
         </p>
-        <a
-          href="https://calendly.com/taniaelevia/15min"
-          target="_blank"
+        <button
+          onClick={navigateToCalendly}
           className="mt-6 px-6 py-3 md:px-8 md:py-4 bg-white text-[var(--accent-color)] font-medium rounded-lg transition duration-300 transform hover:bg-gray-200 hover:scale-105 inline-block"
         >
           Planifier un Voyage
-        </a>
+        </button>
       </div>
       <div className="absolute bottom-6 animate-bounce">
         <span className="text-sm md:text-lg">
