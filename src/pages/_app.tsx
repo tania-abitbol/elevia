@@ -20,13 +20,14 @@ export default function App({ Component, pageProps }: AppProps) {
         />
 
         <Script id="google-analytics" strategy="afterInteractive">
-          {`
+          {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'AW-16866771162');
-        `}
+        }
         </Script>
+
          <Script id="linkedin-insight" strategy="afterInteractive">
         {`
           _linkedin_partner_id = "6845242";
@@ -47,12 +48,11 @@ export default function App({ Component, pageProps }: AppProps) {
           })(window.lintrk);
         `}
       </Script>
-      <noscript>
-        <img height="1" width="1" style={{ display: "none" }} alt="" src="https://px.ads.linkedin.com/collect/?pid=6845242&fmt=gif" />
-      </noscript>
         
       </Head>
-
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=6845242&fmt=gif" />
+</noscript>
       <GoogleAnalytics trackPageViews gaMeasurementId="G-9Z08YBERKK" />
 
       <Navbar />
