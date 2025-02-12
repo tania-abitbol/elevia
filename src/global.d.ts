@@ -1,13 +1,12 @@
 declare global {
   interface Window {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     gtag: (
       command: "config" | "event",
       id: string,
-      params?: Record<string, any>
+      params?: Record<string, unknown> // Remplace `any` par `unknown`
     ) => void;
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    lintrk: (command: "track", params: Record<string, any>) => void;
+    lintrk: (command: "track", params: Record<string, unknown>) => void;
   }
 }
+
 export {};
