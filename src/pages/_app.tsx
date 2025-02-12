@@ -4,7 +4,6 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { GoogleAnalytics } from "nextjs-google-analytics";
 import Head from "next/head";
-import Script from "next/script"; // Utilisation de next/script pour un chargement optimisé
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
