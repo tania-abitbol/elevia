@@ -8,22 +8,20 @@ const HeroSection = () => {
       id="hero"
       className="relative h-screen flex flex-col items-center justify-center text-white text-center px-6 bg-fixed bg-center bg-cover"
     >
-      {/* Vidéo de fond avec flou et dégradé */}
       <div className="absolute inset-0">
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="w-full h-full object-cover blur-sm brightness-75"
+          className={`w-full h-full object-cover brightness-75 transition-opacity duration-1000 `}
         >
           <source src="/video.mp4" type="video/mp4" />
         </video>
-        {/* Dégradé progressif pour meilleure lisibilité */}
+
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-transparent"></div>
       </div>
 
-      {/* Contenu principal avec animation */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -45,7 +43,6 @@ const HeroSection = () => {
           Obtenir un devis gratuit
         </button>
 
-        {/* Logos partenaires avec meilleure organisation */}
         <div className="mt-6 bg-white/30 px-4 py-3 rounded-xl flex flex-wrap items-center justify-center gap-6 shadow-md">
           <Image
             src="/partners/air-france.png"
@@ -81,7 +78,6 @@ const HeroSection = () => {
         </div>
       </motion.div>
 
-      {/* Indicateur de scroll */}
       <div className="absolute bottom-6 animate-bounce md:text-white">
         <span className="text-sm md:text-lg">
           ↓ Faites défiler pour en savoir plus
