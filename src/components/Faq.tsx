@@ -8,9 +8,9 @@ const FAQSection = () => {
       answer: (
         <p>
           Nous organisons des voyages sur-mesure pour ceux qui veulent partir
-          l'esprit léger, sans s'occuper de la logistique. Que ce soit en
-          famille, entre amis ou en solo, nous nous chargeons de tout pour que
-          vous profitiez à 100 % de votre voyage.
+          l&aposesprit léger, sans s&aposoccuper de la logistique. Que ce soit
+          en famille, entre amis ou en solo, nous nous chargeons de tout pour
+          que vous profitiez à 100 % de votre voyage.
         </p>
       ),
     },
@@ -40,7 +40,7 @@ const FAQSection = () => {
           <br />- Voyages nature et aventure (randonnées, road trips, safaris).
           <br />- Escapades détente et bien-être.
           <br />
-          Peu importe la destination, on s'occupe de tout.
+          Peu importe la destination, on s&aposoccupe de tout.
         </p>
       ),
     },
@@ -81,7 +81,7 @@ const FAQSection = () => {
           Questions Fréquentes
         </h2>
         <p className="text-gray-600 text-lg">
-          Simplifiez vos voyages et partez l'esprit tranquille.
+          Simplifiez vos voyages et partez l&aposesprit tranquille.
         </p>
       </div>
 
