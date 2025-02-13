@@ -21,8 +21,8 @@ const Index: React.FC = () => {
       <Process />
       <Testimonials />
       <FAQSection />
-      <Partners />
       <CallToAction />
+      <Partners />
       <StickyBanner />
     </div>
   );
