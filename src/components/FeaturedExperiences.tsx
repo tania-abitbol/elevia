@@ -6,7 +6,7 @@ const FeaturedExperiences: React.FC = () => {
       title: "Hôtels d’exception",
       description:
         "Séjours Signature, soigneusement sélectionnés pour leur raffinement et leur service irréprochable.",
-      image: "/hotel.jpg",
+      image: "/hotel.webp",
       alt: "Séjours Signature",
     },
     {
