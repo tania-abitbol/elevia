@@ -5,7 +5,6 @@ import Footer from "../components/Footer";
 import { GoogleAnalytics } from "nextjs-google-analytics";
 import Head from "next/head";
 import Script from "next/script";
-import FAQSection from "@/components/Faq";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -59,7 +58,6 @@ export default function App({ Component, pageProps }: AppProps) {
 
       <Navbar />
       <Component {...pageProps} />
-      <FAQSection />
       <Footer />
     </div>
   );

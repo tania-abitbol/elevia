@@ -12,7 +12,8 @@ const HeroSection = () => {
           Organisateur de voyages sur mesure
         </h1>
         <p className="text-base md:text-lg mt-4 opacity-90">
-          Voyagez avec élégance et prestige et une organisation impeccable.
+          On s’occupe de tout, vous n’avez plus qu’à profiter. Séjours sur
+          mesure pour couples, familles et groupes, adaptés à votre budget.
         </p>
         <button
           onClick={navigateToCalendly}
