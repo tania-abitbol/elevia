@@ -9,7 +9,7 @@ import Testimonials from "@/components/Testimonial";
 import FAQSection from "@/components/Faq";
 import CallToAction from "@/components/CallToAction";
 import Partners from "@/components/Parteners";
-import StickyBanner from "@/components/StickyBanner";
+// import StickyBanner from "@/components/StickyBanner";
 
 const sections = [
   { id: "hero", component: HeroSection },
@@ -22,7 +22,7 @@ const sections = [
   { id: "faq", component: FAQSection },
   { id: "call-to-action", component: CallToAction },
   { id: "partners", component: Partners },
-  { id: "sticky-banner", component: StickyBanner },
+  // { id: "sticky-banner", component: StickyBanner },
 ];
 
 const trackTimeSpent = (section: string, duration: number) => {
