@@ -13,7 +13,7 @@ const CTALiberation = () => {
           className="mt-4 md:mt-0 px-6 py-2 bg-white text-[var(--accent-color)] font-semibold rounded-md hover:bg-gray-200 cursor-pointer transition"
           onClick={navigateToCalendly}
         >
-          Réserver mon appel
+          Obtenez une proposition personnalisée
         </button>
       </div>
     </section>

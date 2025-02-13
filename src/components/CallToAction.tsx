@@ -20,7 +20,7 @@ const CallToAction = () => {
           onClick={navigateToCalendly}
           className="mt-6 inline-block px-8 py-4 bg-white text-[var(--accent-color)] font-semibold rounded-lg transition duration-300 transform hover:bg-gray-200 hover:scale-105"
         >
-          Réserver un appel
+          Réserver un appel 100% gratuit
         </button>
       </div>
     </section>

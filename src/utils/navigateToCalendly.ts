@@ -21,7 +21,6 @@ export const navigateToCalendly = () => {
         },
       });
 
-      // Fallback : si le callback ne s’exécute pas dans les 1.5 secondes, on redirige quand même
       setTimeout(() => {
         console.log("Timeout de fallback atteint, redirection automatique.");
         redirect();

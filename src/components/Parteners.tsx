@@ -1,10 +1,10 @@
 import { useEffect, useRef } from "react";
-import Image from "next/image"; // Importer le composant Image de Next.js
+import Image from "next/image";
 
 const Partners: React.FC = () => {
   const partners = [
     { name: "Marriott", logo: "/partners/marriott.png" },
-    { name: "Air France", logo: "/partners/air-france.png" },
+    { name: "Air France", logo: "/partners/air-france.jpg" },
     { name: "Club Med", logo: "/partners/club-med.png" },
     { name: "Emirates", logo: "/partners/emirates.png" },
     { name: "Four Seasons", logo: "/partners/fourseasons.png" },
@@ -56,8 +56,8 @@ const Partners: React.FC = () => {
               src={partner.logo}
               alt={`Logo de ${partner.name}`}
               className="object-contain"
-              width={200}  // Choisis une largeur adaptée à l'affichage
-              height={80}  // Choisis une hauteur adaptée à l'affichage
+              width={200}
+              height={80}
             />
           </div>
         ))}

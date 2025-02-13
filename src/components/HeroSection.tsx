@@ -4,22 +4,21 @@ const HeroSection = () => {
   return (
     <header
       id="hero"
-      className="relative h-screen bg-[url('/luxury-travel.jpg')] bg-cover bg-center flex flex-col items-center justify-center text-white text-center px-6"
+      className="relative h-screen bg-[url('/luxury-travel.webp')] bg-cover bg-center flex flex-col items-center justify-center text-white text-center px-6"
     >
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       <div className="relative z-10 max-w-xl">
-        <h1 className="text-4xl md:text-5xl font-bold leading-snug animate-fade-in">
-          Vivez l’Exception avec Elevia
+        <h1 className="text-3xl md:text-5xl font-bold leading-snug animate-fade-in">
+          Organisateur de voyages sur mesure
         </h1>
         <p className="text-base md:text-lg mt-4 opacity-90">
-          Des voyages sur-mesure, une organisation impeccable, des expériences
-          inoubliables.
+          Voyagez avec élégance et prestige et une organisation impeccable.
         </p>
         <button
           onClick={navigateToCalendly}
           className="mt-6 px-6 py-3 md:px-8 md:py-4 bg-white text-[var(--accent-color)] font-medium rounded-lg transition duration-300 transform hover:bg-gray-200 hover:scale-105 inline-block"
         >
-          Planifier un Voyage
+          Demander un appel gratuit
         </button>
       </div>
       <div className="absolute bottom-6 animate-bounce">

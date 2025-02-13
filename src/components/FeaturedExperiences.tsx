@@ -13,35 +13,35 @@ const FeaturedExperiences: React.FC = () => {
       title: "Villas Élégantes",
       description:
         "Des villas sublimes, avec piscine privée et conciergerie dédiée, pour une intimité absolue.",
-      image: "/villa.jpg",
+      image: "/villa.webp",
       alt: "Villas Élégantes",
     },
     {
       title: "Aventures Sur-Mesure",
       description:
         "Expéditions uniques et guidées, mêlant luxe et authenticité dans des lieux exclusifs.",
-      image: "/safari.jpg",
+      image: "/safari.webp",
       alt: "Aventures Sur-Mesure",
     },
     {
       title: "Voyages Aériens Premium",
       description:
         "Vols premium, optimisés pour le confort et la flexibilité, avec un service d’exception.",
-      image: "/avion.jpg",
+      image: "/avion.webp",
       alt: "Voyages Aériens Privés",
     },
     {
       title: "Ski en Montagne",
       description:
         "Chalets luxueux au cœur des montagnes, combinant sérénité, jacuzzi et ski privé.",
-      image: "/ski.jpg",
+      image: "/ski.webp",
       alt: "Retraites en Montagne",
     },
     {
       title: "Expériences Maritimes",
       description:
         "Croisières personnalisées sur des yachts élégants, avec itinéraires exclusifs.",
-      image: "/yacht.jpg",
+      image: "/yacht.webp",
       alt: "Expériences Maritimes",
     },
   ];
