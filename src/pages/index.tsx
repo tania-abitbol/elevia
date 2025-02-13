@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import HeroSection from "@/components/HeroSection";
 import WhyChoose from "@/components/WhyChoose";
 import TravelExamplesSection from "@/components/TravelSection";
