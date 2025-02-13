@@ -49,7 +49,7 @@ const FeaturedExperiences: React.FC = () => {
   return (
     <section id="voyages" className="p-20 px-6 text-center">
       <h2 className="text-4xl font-bold text-gray-900">
-        Des expériences d&apos;exception
+        Des expériences d'exception
       </h2>
       <p className="text-lg mt-4 max-w-3xl mx-auto text-gray-700">
         Conçues pour vous offrir un équilibre parfait entre confort, exploration

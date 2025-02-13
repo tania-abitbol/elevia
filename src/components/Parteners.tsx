@@ -39,8 +39,8 @@ const Partners: React.FC = () => {
     >
       <h2 className="text-4xl font-bold text-gray-900">Nos Partenaires</h2>
       <p className="text-lg mt-4 max-w-3xl mx-auto text-gray-700 leading-relaxed">
-        Avec nos partenaires d&apos;exception, nous transformons vos rêves en
-        voyages mémorables. Ils garantissent une expérience sans compromis.
+        Avec nos partenaires d'exception, nous transformons vos rêves en voyages
+        mémorables. Ils garantissent une expérience sans compromis.
       </p>
 
       <div

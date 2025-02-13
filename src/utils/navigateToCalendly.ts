@@ -11,6 +11,11 @@ export const navigateToCalendly = () => {
       console.log(
         "gtag est disponible, déclenchement de l'évènement conversion."
       );
+
+      window.gtag("event", `click_to_callendly`, {
+        event_category: "click",
+      });
+
       window.gtag("event", "conversion", {
         send_to: "AW-16866771162/xylZCOvUopwaENqB2uo-",
         value: 1.0,

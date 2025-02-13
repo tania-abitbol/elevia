@@ -7,7 +7,7 @@ const Testimonials: React.FC = () => {
     },
     {
       name: "Julien, CEO avec une vie bien remplie",
-      text: "“J&aposavais besoin de déconnecter rapidement. Elevia s'est occupé de tout avec une précision incroyable : vol, hébergement, chauffeur, activités sur mesure.”",
+      text: "“J'avais besoin de déconnecter rapidement. Elevia s'est occupé de tout avec une précision incroyable : vol, hébergement, chauffeur, activités sur mesure.”",
       detail: "Destination : Marrakech",
     },
     {

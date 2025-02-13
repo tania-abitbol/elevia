@@ -5,8 +5,8 @@ const CTALiberation = () => {
     <section className="bg-[var(--accent-color)] text-white py-6 px-8 text-center">
       <div className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto">
         <p className="text-md md:text-lg font-medium">
-          Dites adieu au stress de l&apos;organisation des voyages. Profitez, on
-          s&apos;occupe de tout.
+          Dites adieu au stress de l'organisation des voyages. Profitez, on
+          s'occupe de tout.
         </p>
 
         <button
