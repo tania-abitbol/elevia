@@ -2,7 +2,7 @@ import { navigateToCalendly } from "@/utils/navigateToCalendly";
 
 const Process = () => {
   return (
-    <div id="process" className="min-h-screen text-gray-900">
+    <div id="process" className="text-gray-900">
       <section className="pb-16 px-6 text-center">
         <h2 className="text-4xl font-bold">Comment ça marche ?</h2>
         <p className="text-md mt-2 max-w-3xl mx-auto text-gray-600">
