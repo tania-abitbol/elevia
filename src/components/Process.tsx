@@ -3,8 +3,8 @@ import { navigateToCalendly } from "@/utils/navigateToCalendly";
 const Process = () => {
   return (
     <div id="process" className="min-h-screen text-gray-900">
-      <section className="py-16 px-6 text-center">
-        <h2 className="text-3xl font-bold">Comment ça marche ?</h2>
+      <section className="pb-16 px-6 text-center">
+        <h2 className="text-4xl font-bold">Comment ça marche ?</h2>
         <p className="text-md mt-2 max-w-3xl mx-auto text-gray-600">
           De la prise de contact à l’organisation complète de votre voyage, nous
           offrons un service clé en main pour transformer vos idées en réalité.

@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
       <motion.nav
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="fixed top-5 left-1/2 transform -translate-x-1/2 w-[85%] md:w-[75%] lg:w-[65%] rounded-xl px-6 py-3 bg-black/50 backdrop-blur-md text-white z-50 shadow-lg"
+        className="absolute top-5 left-1/2 transform -translate-x-1/2 w-[85%] md:w-[75%] lg:w-[65%] rounded-xl px-6 py-3 bg-black/50 backdrop-blur-md text-white z-50 shadow-lg"
       >
         <div className="flex justify-between items-center">
           {/* LOGO */}
@@ -92,13 +92,21 @@ const Navbar: React.FC = () => {
           >
             {/* ✅ LOGO + BOUTON FERMER */}
             <div className="absolute top-4 left-6 flex items-center justify-between w-full">
-              <h1 className="text-2xl font-semibold">Elevia Prestige</h1>
+              <div className="flex items-center space-x-2">
+                <FaPlane className="text-lg text-[var(--yellow)] animate-pulse" />
+                <h1 className="text-lg md:text-xl font-light tracking-wide">
+                  Elevia{" "}
+                  <span className="text-[var(--yellow)] font-semibold">
+                    Prestige
+                  </span>
+                </h1>
+              </div>
               <button
                 onClick={() => setIsMenuOpen(false)}
-                className="text-white focus:outline-none"
+                className="text-white focus:outline-none mr-12"
               >
                 <svg
-                  className="w-8 h-8"
+                  className="w-6 h-6"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"

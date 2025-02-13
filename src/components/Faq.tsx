@@ -85,7 +85,7 @@ const FAQSection = () => {
         </p>
       </div>
 
-      <div className="mt-8 max-w-3xl mx-auto space-y-4">
+      <div className="mt-8 max-w-5xl mx-auto space-y-4">
         {faqs.map((faq, index) => (
           <div
             key={index}

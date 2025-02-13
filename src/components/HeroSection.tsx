@@ -40,9 +40,9 @@ const HeroSection = () => {
 
         <button
           onClick={navigateToCalendly}
-          className="mt-6 px-8 py-4 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black text-lg font-semibold rounded-full shadow-lg transition duration-300 transform hover:scale-105 hover:shadow-2xl"
+          className="mt-6 px-8 py-4 bg-gradient-to-r from-[--accent-color] to-[--accent-color2] text-white text-lg font-semibold rounded-full shadow-lg transition duration-300 transform hover:scale-105 hover:shadow-2xl"
         >
-          Planifier mon voyage
+          Obtenir un devis gratuit
         </button>
 
         {/* Logos partenaires avec meilleure organisation */}
