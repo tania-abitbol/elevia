@@ -8,19 +8,21 @@ import Partners from "@/components/Parteners";
 import StickyBanner from "@/components/StickyBanner";
 import Testimonials from "@/components/Testimonial";
 import FAQSection from "@/components/Faq";
+import TravelExamplesSection from "@/components/TravelSection";
 
 const Index: React.FC = () => {
   return (
     <div className="min-h-screen text-gray-900">
       <HeroSection />
-      <Testimonials />
+      <WhyChoose />
+      <TravelExamplesSection />
       <CTALiberation />
       <FeaturedExperiences />
-      <CallToAction />
       <Process />
-      <Partners />
-      <WhyChoose />
+      <Testimonials />
       <FAQSection />
+      <Partners />
+      <CallToAction />
       <StickyBanner />
     </div>
   );

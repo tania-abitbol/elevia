@@ -31,7 +31,7 @@ const StickyBanner = () => {
           onClick={navigateToCalendly}
           className="bg-white text-[#002a5c] px-6 py-2 font-semibold rounded-lg shadow hover:bg-gray-200 transition-all"
         >
-          Planifier un appel
+          Planifier un appel gratuit
         </button>
       </div>
     )
