@@ -11,14 +11,14 @@ const FeaturedExperiences: React.FC = () => {
     {
       title: "Hôtels d’exception",
       description:
-        "Séjours Signature, soigneusement sélectionnés pour leur raffinement et leur service irréprochable.",
+        "Séjours Signature, soigneusement sélectionnés pour leur raffinement.",
       image: "/hotel.webp",
       alt: "Séjours Signature",
     },
     {
       title: "Villas Élégantes",
       description:
-        "Des villas sublimes, avec piscine privée et conciergerie dédiée, pour une intimité absolue.",
+        "Des villas sublimes, avec piscine privée et chef privé, pour une intimité absolue.",
       image: "/villa.webp",
       alt: "Villas Élégantes",
     },
@@ -85,7 +85,7 @@ const FeaturedExperiences: React.FC = () => {
                   height={300}
                   className="w-full h-64 object-cover rounded-t-lg"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+                <div className="absolute inset-0 bg-black bg-opacity-20"></div>
               </div>
               <div className="p-6 bg-white rounded-b-lg">
                 <h3 className="text-xl font-semibold text-gray-900">
