@@ -24,28 +24,25 @@ const FeaturedExperiences: React.FC = () => {
     {
       title: "Aventures Sur-Mesure",
       description:
-        "Expéditions uniques et guidées, mêlant luxe et authenticité dans des lieux exclusifs.",
+        "Expéditions uniques et guidées, mêlant luxe et authenticité.",
       image: "/safari.webp",
       alt: "Aventures Sur-Mesure",
     },
     {
       title: "Voyages Aériens Premium",
-      description:
-        "Vols premium, optimisés pour le confort et la flexibilité, avec un service d’exception.",
+      description: "Vols premium, optimisés pour le confort et la flexibilité.",
       image: "/avion.webp",
       alt: "Voyages Aériens Privés",
     },
     {
       title: "Ski en Montagne",
-      description:
-        "Chalets luxueux au cœur des montagnes, combinant sérénité, jacuzzi et ski privé.",
+      description: "Chalets luxueux au cœur des montagnes.",
       image: "/ski.webp",
       alt: "Retraites en Montagne",
     },
     {
       title: "Expériences Maritimes",
-      description:
-        "Croisières personnalisées sur des yachts élégants, avec itinéraires exclusifs.",
+      description: "Croisières personnalisées sur des yachts élégants.",
       image: "/yacht.webp",
       alt: "Expériences Maritimes",
     },
