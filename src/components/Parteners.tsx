@@ -4,7 +4,7 @@ import Image from "next/image";
 const Partners: React.FC = () => {
   const partners = [
     { name: "Marriott", logo: "/partners/marriott.png" },
-    { name: "Air France", logo: "/partners/air-france.jpg" },
+    { name: "Air France", logo: "/partners/air-france.png" },
     { name: "Club Med", logo: "/partners/club-med.png" },
     { name: "Emirates", logo: "/partners/emirates.png" },
     { name: "Four Seasons", logo: "/partners/fourseasons.png" },
