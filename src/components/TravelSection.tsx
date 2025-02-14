@@ -2,12 +2,6 @@ import { motion } from "framer-motion";
 
 const travelExamples = [
   {
-    title: "City-trip à Rome",
-    description:
-      "Un couple voulait un city-trip à Rome sans se prendre la tête. Nous leur avons organisé un séjour avec hébergement, restaurants et visites VIP en 48h.",
-    image: "/rome.jpg",
-  },
-  {
     title: "Road trip en Norvège",
     description:
       "Une famille avec trois enfants rêvait d'un séjour nature en Norvège. Nous leur avons planifié un road trip clé en main, avec hébergements et itinéraire optimisé.",
@@ -18,6 +12,12 @@ const travelExamples = [
     description:
       "Un couple souhaitait un voyage relaxant avec zéro organisation. Nous avons sélectionné pour eux une villa privée avec service tout inclus.",
     image: "/maldives.jpg",
+  },
+  {
+    title: "City-trip à Rome",
+    description:
+      "Un couple voulait un city-trip à Rome sans se prendre la tête. Nous leur avons organisé un séjour avec hébergement, restaurants et visites VIP en 48h.",
+    image: "/rome.jpg",
   },
 ];
 

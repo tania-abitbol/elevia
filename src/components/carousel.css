@@ -1,0 +1,22 @@
+.custom-swiper .swiper-pagination-bullet {
+  background-color: #024aa1; /* Couleur des bullet points */
+  opacity: 0.6;
+  width: 8px; /* Augmente légèrement la taille */
+  height: 8;
+}
+
+.custom-swiper .swiper-pagination-bullet-active {
+  background-color: #024aa1; /* Couleur du bullet actif */
+  opacity: 1;
+}
+
+.custom-swiper .swiper-button-prev,
+.custom-swiper .swiper-button-next {
+  color: #f4f4f4; /* Couleur des flèches */
+  transform: scale(0.5); /* Réduit la taille des flèches */
+}
+
+.custom-swiper .swiper-button-prev:hover,
+.custom-swiper .swiper-button-next:hover {
+  color: #f4f4f4; /* Couleur des flèches au hover */
+}

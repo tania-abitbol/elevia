@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <header
       id="hero"
-      className="relative h-screen flex flex-col items-center justify-center text-white text-center px-6 bg-fixed bg-center bg-cover"
+      className="relative h-[90vh] flex flex-col items-center justify-center text-white text-center px-6 bg-fixed bg-center bg-cover"
     >
       <div className="absolute inset-0">
         <video

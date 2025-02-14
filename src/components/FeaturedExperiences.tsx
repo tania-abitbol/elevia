@@ -1,4 +1,10 @@
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Pagination, Navigation } from "swiper/modules";
+import "./carousel.css";
 
 const FeaturedExperiences: React.FC = () => {
   const experiences = [
@@ -56,35 +62,43 @@ const FeaturedExperiences: React.FC = () => {
         et élégance.
       </p>
 
-      <div className="grid md:grid-cols-3 gap-12 mt-10 max-w-6xl mx-auto">
+      <Swiper
+        modules={[Pagination, Navigation]}
+        spaceBetween={20}
+        slidesPerView={1}
+        pagination={{ clickable: true, dynamicBullets: true }}
+        navigation
+        breakpoints={{
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
+        className="mt-10 max-w-6xl mx-auto custom-swiper"
+      >
         {experiences.map((experience) => (
-          <div
-            key={experience.title}
-            className="relative rounded-lg shadow-md overflow-hidden"
-          >
-            {/* Image avec filtre subtil */}
-            <div className="relative">
-              <Image
-                src={experience.image}
-                alt={experience.alt}
-                width={256}
-                height={256}
-                className="w-full h-64 object-cover"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+          <SwiperSlide key={experience.title}>
+            <div className="relative rounded-lg shadow-lg overflow-hidden">
+              <div className="relative">
+                <Image
+                  src={experience.image}
+                  alt={experience.alt}
+                  width={400}
+                  height={300}
+                  className="w-full h-64 object-cover rounded-t-lg"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+              </div>
+              <div className="p-6 bg-white rounded-b-lg">
+                <h3 className="text-xl font-semibold text-gray-900">
+                  {experience.title}
+                </h3>
+                <p className="mt-2 text-gray-600 leading-relaxed">
+                  {experience.description}
+                </p>
+              </div>
             </div>
-            {/* Texte sous l'image */}
-            <div className="p-6 bg-white">
-              <h3 className="text-xl font-semibold text-gray-900">
-                {experience.title}
-              </h3>
-              <p className="mt-2 text-gray-600 leading-relaxed">
-                {experience.description}
-              </p>
-            </div>
-          </div>
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </section>
   );
 };
