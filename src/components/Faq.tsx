@@ -4,13 +4,20 @@ import { motion, AnimatePresence } from "framer-motion";
 const FAQSection = () => {
   const faqs = [
     {
-      question: "Quels types de voyages proposez-vous ?",
+      question:
+        "Quels types de voyages proposez-vous et quelles destinations sont disponibles ?",
       answer: (
         <p>
-          Nous organisons des voyages sur-mesure pour ceux qui veulent partir
-          l'esprit léger, sans s'occuper de la logistique. Que ce soit en
-          famille, entre amis ou en solo, nous nous chargeons de tout pour que
-          vous profitiez à 100 % de votre voyage.
+          Nous organisons des voyages sur-mesure adaptés à vos envies et
+          besoins. Que ce soit :
+          <br />- Des séjours en famille à la mer ou à la montagne.
+          <br />- Des city-trips en Europe ou ailleurs.
+          <br />- Des voyages nature et aventure (randonnées, road trips,
+          safaris).
+          <br />- Des escapades détente et bien-être.
+          <br />
+          <strong>Peu importe la destination</strong>, nous nous chargeons de
+          tout pour que vous profitiez pleinement de votre voyage.
         </p>
       ),
     },
@@ -20,38 +27,31 @@ const FAQSection = () => {
         <p>
           C’est simple :
           <br />
-          1. Planifiez un appel gratuit avec un conseiller.
+          <strong>1. Planifiez</strong> un appel gratuit avec un conseiller.
           <br />
-          2. Définissez vos envies et besoins.
+          <strong>2. Définissez</strong> vos envies et besoins.
           <br />
-          3. Nous organisons tout : hébergements, transports, activités.
+          <strong>3. Nous organisons tout :</strong> hébergements, transports,
+          activités.
           <br />
-          4. Vous recevez votre programme détaillé et partez sans stress.
+          <strong> 4. Vous recevez</strong> votre programme détaillé et partez
+          sans stress.
         </p>
       ),
     },
     {
-      question: "Quelles destinations sont disponibles ?",
+      question: "Quel budget prévoir et comment fonctionne la tarification ?",
       answer: (
         <p>
-          Nous proposons des voyages partout dans le monde selon vos envies :
-          <br />- Séjours en famille à la mer ou à la montagne.
-          <br />- City-trips en Europe ou ailleurs.
-          <br />- Voyages nature et aventure (randonnées, road trips, safaris).
-          <br />- Escapades détente et bien-être.
+          Nous nous adaptons à <strong>tous les budgets</strong>, du séjour
+          simple au voyage d'exception.
           <br />
-          Peu importe la destination, on s'occupe de tout.
-        </p>
-      ),
-    },
-    {
-      question: "Quels sont les budgets que vous prenez en charge ?",
-      answer: (
-        <p>
-          Nos voyages sont adaptés à différents budgets, du séjour simple au
-          voyage plus haut de gamme. Nous trouvons les meilleures options en
-          fonction de vos attentes et vous garantissons une organisation
-          optimale sans prise de tête.
+          Notre modèle repose sur une commission de 15 %, mais grâce à nos
+          partenariats exclusifs avec les plus grandes enseignes de voyage,
+          cette commission est entièrement compensée.{" "}
+          <strong>Résultat : </strong>vous payez le même prix, voire moins cher,
+          que si vous organisiez tout seul, sans le stress et les heures de
+          recherche.
         </p>
       ),
     },
@@ -59,10 +59,15 @@ const FAQSection = () => {
       question: "Pourquoi choisir Élevia Prestige ?",
       answer: (
         <p>
-          - Zéro stress : on s’occupe de tout, vous profitez.
-          <br />- Gain de temps : fini les recherches interminables.
-          <br />- Personnalisation : chaque voyage est conçu selon vos attentes.
-          <br />- Assistance : une équipe disponible en cas de besoin.
+          - <strong>Zéro stress :</strong> on s’occupe de tout, vous profitez.
+          <br />- <strong>Gain de temps :</strong> fini les recherches
+          interminables.
+          <br />- <strong>Personnalisation :</strong> chaque voyage est conçu
+          selon vos attentes.
+          <br />- <strong>Accès privilégié :</strong> grâce à nos partenaires,
+          vous bénéficiez d’avantages exclusifs.
+          <br />- <strong>Assistance :</strong> une équipe disponible en cas de
+          besoin avant et pendant votre voyage.
         </p>
       ),
     },
@@ -75,7 +80,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section id="faq" className="py-14 px-8 bg-gray-50">
+    <section id="faq" className="py-14 px-8 bg-[--secondary-color]">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-gray-800 mb-6">
           Questions Fréquentes

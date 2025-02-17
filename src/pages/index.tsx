@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { motion } from "framer-motion"; // Import de l'animation
 import HeroSection from "@/components/HeroSection";
 import WhyChoose from "@/components/WhyChoose";
 import TravelExamplesSection from "@/components/TravelSection";
@@ -9,7 +10,6 @@ import Testimonials from "@/components/Testimonial";
 import FAQSection from "@/components/Faq";
 import CallToAction from "@/components/CallToAction";
 import Partners from "@/components/Parteners";
-// import StickyBanner from "@/components/StickyBanner";
 
 const sections = [
   { id: "hero", component: HeroSection },
@@ -22,7 +22,6 @@ const sections = [
   { id: "faq", component: FAQSection },
   { id: "call-to-action", component: CallToAction },
   { id: "partners", component: Partners },
-  // { id: "sticky-banner", component: StickyBanner },
 ];
 
 const trackTimeSpent = (section: string, duration: number) => {
@@ -72,9 +71,16 @@ const Index: React.FC = () => {
   return (
     <div className="min-h-screen text-gray-900">
       {sections.map(({ id, component: Component }) => (
-        <section key={id} id={id}>
+        <motion.section
+          key={id}
+          id={id}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
           <Component />
-        </section>
+        </motion.section>
       ))}
     </div>
   );

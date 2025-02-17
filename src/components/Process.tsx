@@ -2,7 +2,10 @@ import { navigateToCalendly } from "@/utils/navigateToCalendly";
 
 const Process = () => {
   return (
-    <div id="process" className="text-gray-900 py-12 px-6">
+    <div
+      id="process"
+      className="text-gray-900 py-12 px-6 bg-[--secondary-color]"
+    >
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 md:mb-6">
           Comment ça marche ?

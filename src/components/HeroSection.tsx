@@ -43,7 +43,7 @@ const HeroSection = () => {
           Obtenir un devis gratuit
         </button>
 
-        <div className="mt-6 bg-white/30 px-4 py-3 rounded-xl flex flex-wrap items-center justify-center gap-6 shadow-md">
+        <div className="mt-8 bg-white/30 px-4 py-3 rounded-xl flex flex-wrap items-center justify-center gap-6 shadow-md">
           <Image
             src="/partners/air-france.png"
             width={70}
@@ -65,16 +65,6 @@ const HeroSection = () => {
             alt="Club Med"
             className="opacity-90"
           />
-          <Image
-            src="/partners/fourseasons.png"
-            width={70}
-            height={40}
-            alt="Four Seasons"
-            className="opacity-90"
-          />
-          <span className="text-sm md:text-lg text-white font-semibold md:ml-4">
-            + 500 clients satisfaits
-          </span>
         </div>
       </motion.div>
 
