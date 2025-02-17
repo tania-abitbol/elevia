@@ -1,11 +1,8 @@
-import { navigateToCalendly } from "@/utils/navigateToCalendly";
+import { InlineWidget } from "react-calendly";
 
 const Process = () => {
   return (
-    <div
-      id="process"
-      className="text-gray-900 py-12 px-6 bg-[--secondary-color]"
-    >
+    <div id="process" className="text-gray-900 py-12  bg-[--secondary-color]">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 md:mb-6">
           Comment ça marche ?
@@ -78,7 +75,7 @@ const Process = () => {
         ))}
       </div>
 
-      <section className="bg-[var(--accent-color)] text-white py-12 px-8 text-center mt-16 rounded-lg shadow-lg">
+      <section className="bg-[var(--accent-color)] text-white py-12 px-6 text-center mt-16  shadow-lg">
         <h2 className="text-2xl font-bold">
           Prêt à commencer votre aventure ?
         </h2>
@@ -86,12 +83,14 @@ const Process = () => {
           Réservez dès maintenant votre appel et laissez-nous créer votre voyage
           sur-mesure.
         </p>
-        <button
-          onClick={navigateToCalendly}
-          className="mt-6 px-8 py-4 bg-white text-[var(--accent-color)] font-semibold rounded-full hover:bg-gray-200 transition shadow-md"
-        >
-          Planifier un appel
-        </button>
+
+        {/* Conteneur pour éviter les bugs de rendu */}
+        <div className="mt-6 mx-auto max-w-xl w-full bg-white p-4 rounded-lg shadow-lg">
+          <InlineWidget
+            url="https://calendly.com/taniaelevia/15min"
+            styles={{ height: "650px", width: "100%" }}
+          />
+        </div>
       </section>
     </div>
   );
