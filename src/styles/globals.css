@@ -1,35 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 :root {
-  --primary-color: #004d40; /* Vert foncé ou autre couleur premium */
-  --secondary-color: #f4f4f4; /* Beige ou blanc cassé */
-  --accent-color: #002a5c; /* Or */
-  --accent-color2: #024aa1; /* Blanc */
-  --dark-color: #333; /* Noir */
-  --yellow: #e6be8a; /* Jaune */
+  --primary-color: #004d40; /* Vert foncé premium */
+  --secondary-color: #f8f5f0; /* Beige doux pour un fond chic */
+  --dark-color: #222; /* Noir profond */
+  --accent-color: #004d40; /* Or */
+  --accent-color2: #004136; /* Blanc */
+  --yellow: #c9a558; /* Doré élégant */
 }
 
 .transition-all {
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 
-.hidden {
-  display: none;
+.hover-shadow-xl:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-.fixed {
-  position: fixed;
+.hover-scale-105:hover {
+  transform: scale(1.05);
 }
 
-.shadow-lg {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.transition-all {
-  transition: all 0.3s ease;
-}
-
-.custom-font {
-  font-family: "DMSerif", sans-serif;
+/* Animation fluide du bouton */
+.btn-hover:hover {
+  background-color: var(--yellow) !important;
+  color: black !important;
 }

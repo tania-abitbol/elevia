@@ -2,18 +2,18 @@ import { navigateToCalendly } from "@/utils/navigateToCalendly";
 
 const CTALiberation = () => {
   return (
-    <section className="bg-[var(--accent-color)] text-white py-6 px-8 text-center">
-      <div className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto">
-        <p className="text-md md:text-lg font-medium">
-          Dites adieu au stress de l'organisation des voyages. Profitez, on
-          s'occupe de tout.
+    <section className="bg-[var(--accent-color)] text-white py-10 px-8 text-center">
+      <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
+        <p className="text-lg md:text-xl font-medium leading-relaxed">
+          Dites adieu au stress de l'organisation des voyages.
+          <br /> Profitez, on s'occupe de tout.
         </p>
 
         <button
-          className="mt-4 md:mt-0 px-6 py-2 bg-white text-[var(--accent-color)] font-semibold rounded-md hover:bg-gray-200 cursor-pointer transition"
+          className="mt-4 px-8 py-4 bg-white text-[var(--accent-color)] font-semibold rounded-lg shadow-md hover:shadow-lg hover:bg-gray-200 transition-all duration-300"
           onClick={navigateToCalendly}
         >
-          Obtenez une proposition personnalisée
+          Planifiez votre voyage maintenant
         </button>
       </div>
     </section>

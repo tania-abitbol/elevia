@@ -49,14 +49,16 @@ const FeaturedExperiences: React.FC = () => {
   ];
 
   return (
-    <section id="voyages" className="p-20 px-6 text-center">
-      <h2 className="text-4xl font-bold text-gray-900">
-        Des expériences d'exception
-      </h2>
-      <p className="text-lg mt-4 max-w-3xl mx-auto text-gray-700">
-        Conçues pour vous offrir un équilibre parfait entre confort, exploration
-        et élégance.
-      </p>
+    <section id="voyages" className="p-12 px-6 text-center">
+      <div className="max-w-6xl mx-auto text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 md:mb-6">
+          Des expériences d'exception
+        </h2>
+        <p className="text-gray-600 text-lg md:text-xl mb-6 md:mb-10">
+          Conçues pour vous offrir un équilibre parfait entre confort,
+          exploration et élégance.
+        </p>
+      </div>
 
       <Swiper
         modules={[Pagination, Navigation]}
@@ -68,12 +70,12 @@ const FeaturedExperiences: React.FC = () => {
           768: { slidesPerView: 2 },
           1024: { slidesPerView: 3 },
         }}
-        className="mt-10 max-w-6xl mx-auto custom-swiper"
+        className="mt-10 max-w-6xl mx-auto custom-swiper rounded-t-lg"
       >
         {experiences.map((experience) => (
           <SwiperSlide key={experience.title}>
-            <div className="relative rounded-lg shadow-lg overflow-hidden">
-              <div className="relative">
+            <div className="relative rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform">
+              <div className="relative ">
                 <Image
                   src={experience.image}
                   alt={experience.alt}
@@ -81,13 +83,13 @@ const FeaturedExperiences: React.FC = () => {
                   height={300}
                   className="w-full h-64 object-cover rounded-t-lg"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+                <div className="absolute inset-0 bg-black bg-opacity-10"></div>
               </div>
-              <div className="p-6 bg-white rounded-b-lg">
-                <h3 className="text-xl font-semibold text-gray-900">
+              <div className="px-6 py-10 bg-white rounded-b-lg">
+                <h3 className="text-xl font-semibold text-[var(--yellow)] mb-2">
                   {experience.title}
                 </h3>
-                <p className="mt-2 text-gray-600 leading-relaxed">
+                <p className="text-gray-800 leading-relaxed">
                   {experience.description}
                 </p>
               </div>
@@ -95,6 +97,15 @@ const FeaturedExperiences: React.FC = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+
+      <div className="mt-8">
+        <a
+          href="#contact"
+          className="bg-[var(--yellow)] text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-white hover:text-[var(--yellow)] shadow-lg transition-all inline-block"
+        >
+          Créez votre expérience unique
+        </a>
+      </div>
     </section>
   );
 };

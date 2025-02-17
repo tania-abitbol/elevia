@@ -1,22 +1,43 @@
+/* Swiper custom styles */
 .custom-swiper .swiper-pagination-bullet {
-  background-color: #024aa1; /* Couleur des bullet points */
+  background-color: var(--yellow);
   opacity: 0.6;
-  width: 8px; /* Augmente légèrement la taille */
-  height: 8;
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-pagination {
+  top: 5px;
 }
 
 .custom-swiper .swiper-pagination-bullet-active {
-  background-color: #024aa1; /* Couleur du bullet actif */
+  background-color: var(--yellow);
   opacity: 1;
 }
 
 .custom-swiper .swiper-button-prev,
 .custom-swiper .swiper-button-next {
-  color: #f4f4f4; /* Couleur des flèches */
-  transform: scale(0.5); /* Réduit la taille des flèches */
+  color: var(--secondary-color);
+  transform: scale(0.7);
 }
 
 .custom-swiper .swiper-button-prev:hover,
 .custom-swiper .swiper-button-next:hover {
-  color: #f4f4f4; /* Couleur des flèches au hover */
+  color: var(--secondary-color);
+}
+
+/* Animation pour les titres et textes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out forwards;
 }
