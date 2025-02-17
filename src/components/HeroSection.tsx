@@ -26,7 +26,7 @@ const HeroSection = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="relative z-10 max-w-2xl px-4"
+        className="relative z-10 max-w-2xl px-4 items-center justify-center text-center flex flex-col"
       >
         <h1 className="text-4xl md:text-6xl font-bold leading-snug drop-shadow-xl">
           Organisateur de voyages sur mesure
@@ -43,7 +43,7 @@ const HeroSection = () => {
           Obtenir un devis gratuit
         </button>
 
-        <div className="mt-8 bg-white/30 px-4 py-3 rounded-xl flex flex-wrap items-center justify-center gap-6 shadow-md">
+        <div className="mt-8  bg-white/30 px-4 py-3 rounded-xl flex flex-wrap items-center justify-center gap-6 shadow-md">
           <Image
             src="/partners/air-france.png"
             width={70}

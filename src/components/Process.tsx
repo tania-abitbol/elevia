@@ -13,7 +13,7 @@ const Process = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
         {[
           {
             step: "1",
@@ -60,7 +60,7 @@ const Process = () => {
         ].map(({ step, title, description, icon }) => (
           <div
             key={step}
-            className="flex items-center bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-all"
+            className="flex items-center bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-all mx-4"
           >
             <span className="text-3xl text-[var(--accent-color)] mr-4">
               {icon}
@@ -79,13 +79,13 @@ const Process = () => {
         <h2 className="text-2xl font-bold">
           Prêt à commencer votre aventure ?
         </h2>
-        <p className="text-lg mt-2 max-w-xl mx-auto">
+        <p className="text-lg  mb-8">
           Réservez dès maintenant votre appel et laissez-nous créer votre voyage
           sur-mesure.
         </p>
 
         {/* Conteneur pour éviter les bugs de rendu */}
-        <div className="mt-6 mx-auto max-w-xl w-full bg-white p-4 rounded-lg shadow-lg">
+        <div className=" bg-[var(--accent-color)]  rounded-lg">
           <InlineWidget
             url="https://calendly.com/taniaelevia/15min"
             styles={{ height: "650px", width: "100%" }}

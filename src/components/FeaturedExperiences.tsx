@@ -36,7 +36,8 @@ const FeaturedExperiences: React.FC = () => {
     },
     {
       title: "Ski en Montagne",
-      description: "Chalets luxueux au cœur des montagnes.",
+      description:
+        "Chalets luxueux au cœur des montagnes. Ambiance chaleureuse garantie.",
       image: "/ski.webp",
       alt: "Retraites en Montagne",
     },
