@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Link } from "react-scroll";
 import { useState } from "react";
 import { FaPlane } from "react-icons/fa";
@@ -17,7 +18,13 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center">
           {/* LOGO */}
           <div className="flex items-center space-x-2">
-            <FaPlane className="text-lg text-[var(--yellow)] animate-pulse" />
+            <Image
+              src="/favicon.png"
+              width={36}
+              height={36}
+              alt="Elevia"
+              className="rounded-xl"
+            />
             <h1 className="text-lg md:text-xl font-light tracking-wide">
               Elevia{" "}
               <span className="text-[var(--yellow)] font-semibold">
