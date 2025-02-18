@@ -6,8 +6,14 @@ import Footer from "../components/Footer";
 import { GoogleAnalytics } from "nextjs-google-analytics";
 import Head from "next/head";
 import Script from "next/script";
+import Hotjar from "@hotjar/browser";
 
 export default function App({ Component, pageProps }: AppProps) {
+  const siteId = 5309279;
+  const hotjarVersion = 6;
+
+  Hotjar.init(siteId, hotjarVersion);
+
   return (
     <div className="relative">
       <Head>

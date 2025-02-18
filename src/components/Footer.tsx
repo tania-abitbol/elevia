@@ -3,7 +3,7 @@ import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#002a5c] text-white py-10">
+    <footer className="bg-[--accent-color] text-white py-10">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center md:items-start justify-between text-center md:text-left">
         <div className="mb-6 md:mb-0">
           <h3 className="text-xl font-semibold">Elevia</h3>

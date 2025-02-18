@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react";
-import { motion } from "framer-motion"; // Import de l'animation
+import { motion } from "framer-motion";
 import HeroSection from "@/components/HeroSection";
-import WhyChoose from "@/components/WhyChoose";
 import TravelExamplesSection from "@/components/TravelSection";
 import CTALiberation from "@/components/CTALiberation";
 import FeaturedExperiences from "@/components/FeaturedExperiences";
@@ -13,7 +12,6 @@ import Partners from "@/components/Parteners";
 
 const sections = [
   { id: "hero", component: HeroSection },
-  { id: "why-choose", component: WhyChoose },
   { id: "travel-examples", component: TravelExamplesSection },
   { id: "cta-liberation", component: CTALiberation },
   { id: "featured-experiences", component: FeaturedExperiences },
